@@ -4,9 +4,11 @@ The Kiso repository is a template that can be used to start a new Kiso experimen
 
 ## Prerequisites
 
-```sh
-pip install kiso[vagrant]
-```
+- [Vagrant](https://developer.hashicorp.com/vagrant/install) installed (version 2.3 or later)
+- A supported VM backend:
+  - **VirtualBox** — install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and set `backend: virtualbox` in the config
+  - **libvirt** (default) — install `libvirt` and the `vagrant-libvirt` plugin
+- Kiso installed: `pip install kiso[vagrant]`
 
 ## Defining the experiment
 
@@ -54,8 +56,6 @@ git push --tags
 
 - [Pegasus Workflow Management System](https://pegasus.isi.edu)
 - [EnOSlib](https://discovery.gitlabpages.inria.fr/enoslib/)
-- [Chameleon Cloud](https://www.chameleoncloud.org)
-- [FABRIC](https://portal.fabric-testbed.net)
 - [Vagrant](https://developer.hashicorp.com/vagrant)
 
 # Acknowledgements
